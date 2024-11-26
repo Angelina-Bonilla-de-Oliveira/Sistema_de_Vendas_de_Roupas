@@ -1,0 +1,29 @@
+
+---
+
+### **.gitignore**
+
+```plaintext
+# Arquivos de configuração locais
+*.env
+*.ini
+*.config
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Diretórios e arquivos de backup
+*.bak
+*.tmp
+*.old
+
+# Informações sensíveis
+credentials.txt
+secrets.json
+
+# Ferramentas de banco de dados
+dump.sql

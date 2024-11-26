@@ -1,0 +1,47 @@
+Enunciado do Projeto
+O projeto "Loja de Roupas" é um sistema de gerenciamento para uma loja fictícia de roupas. Ele foi desenvolvido com o objetivo de organizar e facilitar a gestão de categorias, produtos, clientes, fornecedores e vendas. O banco de dados é responsável por armazenar e relacionar as informações essenciais da loja, permitindo o controle eficiente de estoque, cadastro de clientes, registro de vendas e administração de fornecedores
+
+# Loja de Roupas
+
+## Descrição do Projeto
+
+O projeto **Loja de Roupas** é um sistema de banco de dados criado para gerenciar informações relacionadas a uma loja de roupas. Ele organiza categorias de produtos, estoques, clientes, fornecedores e vendas, fornecendo uma estrutura sólida para o gerenciamento de dados.
+
+## Estrutura do Banco de Dados
+
+O banco de dados contém as seguintes tabelas:
+
+1. **Categorias**:
+   - Armazena as categorias de produtos.
+   - Campos: `id_Categoria`, `nome`.
+
+2. **Produtos**:
+   - Armazena informações sobre os produtos da loja.
+   - Campos: `id_Produtos`, `nome`, `tamanho`, `cor`, `preco`, `estoque`, `id_Categoria`, `id_Fornecedor`.
+
+3. **Clientes**:
+   - Armazena informações sobre os clientes da loja.
+   - Campos: `id_Cliente`, `nome`, `email`, `telefone`, `endereco`.
+
+4. **Fornecedores**:
+   - Armazena informações sobre os fornecedores de produtos.
+   - Campos: `id_Fornecedor`, `nome`, `telefone`, `endereco`.
+
+5. **Vendas**:
+   - Armazena informações sobre as vendas realizadas.
+   - Campos: `id_Venda`, `id_Cliente`, `data_venda`, `valor_total`.
+
+6. **ItensVenda**:
+   - Relaciona produtos às vendas realizadas, especificando a quantidade e o preço unitário de cada item.
+   - Campos: `id_Item`, `id_Venda`, `id_Produto`, `quantidade`, `preco_unitario`.
+
+## Requisitos
+
+- MySQL ou MariaDB instalado na máquina.
+- Acesso a uma ferramenta para gerenciar o banco de dados, como MySQL Workbench ou phpMyAdmin.
+
+## Como Configurar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/loja-de-roupas.git
